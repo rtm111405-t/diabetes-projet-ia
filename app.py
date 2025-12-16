@@ -18,12 +18,13 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('diabetes_model_new.pkl')
-        scaler = joblib.load('diabetes_scaler_new.pkl')
+        model = joblib.load('models/diabetes_model_new.pkl')
+        scaler = joblib.load('models/diabetes_scaler_new.pkl')
         return model, scaler
     except FileNotFoundError:
         st.error("⚠️ Fichiers modèle introuvables. Veuillez d'abord entraîner le modèle avec train.py")
         st.stop()
+
 
 # Charger le modèle
 model, scaler = load_model()
