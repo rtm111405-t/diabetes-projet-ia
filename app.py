@@ -30,7 +30,7 @@ def load_model():
 model, scaler = load_model()
 
 # Titre principal
-st.title("🏥 Prédiction Progression Diabète")
+st.title("🏥 Prédiction Progression Diabète 2025_2026")
 st.markdown("---")
 
 # ========== SIDEBAR AVEC TESTS RAPIDES ==========
@@ -164,4 +164,4 @@ st.session_state.s6 = s6
 
 # Footer
 st.markdown("---")
-st.caption("🏥 Système de Prédiction du Diabète | Mini-Projet IA 2024-2025")
+st.caption("🏥 Système de Prédiction du Diabète | Mini-Projet IA 2025_2026")
